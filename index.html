@@ -2,24 +2,29 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content= "width=1.0 initial-scale=1.0">
+    <meta name="viewport" content= "width=device-width,initial-scale=1.0">
     <title>Fetch and Async Pokemon</title>
     <!-- CSS Styles -->
      <link rel="stylesheet" href="./styles.css">
 </head>
-<body>
 
-    <h1>Pokemon</h1>
-           
-     <form class="main_form"> 
+<body>
+<!-- Header Section -->
+  <header class="header_section">
+     <h1>Pokemon</h1>
+           <!--Form  -->
+     <form class="main_form_container"> 
+        <!-- Logo -->
             <div class="logo_container">
      <img src="https://wallpapercave.com/wp/z90YOyS.jpg" alt="Pokemon Logo" class="logo">
-     </div>
+ </header>
+     <form>
+     <!-- Main Content -->
  <div class="main_content">
      <h2>Pokemon Api Finder</h2>
     <label for="pokemonFinder" class="label">Pokemon by Name or ID:</label>
         <input type="text" class="input_field" id="pokemonFinder" name="pokemonFinder" placeholder= "Name: Pikachu or ID: 25" required>
-        
+        <!-- Button -->
     <div class="btn_container">
         <button type="button" class="btn">Search</button>
     </div>

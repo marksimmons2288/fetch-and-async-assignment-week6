@@ -1,6 +1,6 @@
 *,
 *::before,
-*::after{
+*::after {
     margin:0;
     padding: 0;
     box-sizing: border-box;
@@ -8,34 +8,53 @@
 
 body {
     background-color: rgb(156, 219, 67);
-
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    padding-top: 30px;
+    min-height: 100vh;
+    
+    
 }
 
 h1 {
 font-size: 3rem;
 color: blue;
+margin-top: 20px;
+margin-left: 2rem;
+
+
+
 }
 
 .logo_container {
-    margin-bottom: 10px;
     display: flex;
     justify-content: center;
+
 
 }
 .logo {
     width: 600px;
     max-width: 90%;
+    border-style: dashed;
+    border-top-color: yellow;
+    border-left-color:  blue;
+    border-bottom-color: yellow ;
+    border-right-color: blue;
+    border-width: 4px;
+
+    
     
 }
 
-.main_form {
-    color: rgb(255, 153, 0);
-    padding:20px;
-    min-height: 100vh;
-    display: flex;
+.header_section {
+     display: flex;
     flex-direction: column;
     justify-content: center;
-    align-items: center;
+    margin-bottom: 20px;
+    width: 600px;
+    max-width: 90%;
 
 }
 
@@ -44,24 +63,26 @@ background-color: rgb(39, 104, 160);
 display: flex;
 flex-direction: column;
 justify-content: flex-start;
-padding: 50px;
+padding: 10px;
 border-radius: 10px;
 border-style: groove;
-margin: 0 auto;
+border-color: rgb(11, 11, 10);
 width: 90%;
 max-width: 600px;
 gap: 20px;
     
 }
 
-.main_content h2{
+.main_content h2 {
     margin-bottom: 1rem;
+    color: rgb(255, 153, 0);
 }
 
-.label{ 
+.label { 
     font-size: 20px;
     font-family: 'Courier New', Courier, monospace;
     font-weight: 700;
+    color: white;
 
 }
 
@@ -70,6 +91,7 @@ gap: 20px;
     border-radius: 10px;
     border-style: solid;
     border-style: inset;
+    width: 80%;
 
 }
 
