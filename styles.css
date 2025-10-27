@@ -8,6 +8,24 @@
 
 body {
     background-color: rgb(156, 219, 67);
+
+}
+
+h1 {
+font-size: 3rem;
+color: blue;
+}
+
+.logo_container {
+    margin-bottom: 10px;
+    display: flex;
+    justify-content: center;
+
+}
+.logo {
+    width: 600px;
+    max-width: 90%;
+    
 }
 
 .main_form {
@@ -36,7 +54,7 @@ gap: 20px;
     
 }
 
-.main_content h1{
+.main_content h2{
     margin-bottom: 1rem;
 }
 
