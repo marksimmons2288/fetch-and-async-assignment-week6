@@ -39,7 +39,22 @@ function renderApiResponse(apiResponse) {
     // Display the pokemon name
     const {data} = apiResponse;
 
-    console.log(data);
+    const typesArray = data.types;
+// Array function to not place a coma after the last type in an array
+    let typesString = ''; 
+    console.log(typesArray);
+
+    typesArray.forEach((type, index) => {
+        console.log(type);
+        
+        typesString += type.type.name;
+        if ( index < typesArray.length - 1) {
+            typesString += ', ';
+        }
+        console.log(typesString);
+
+    });
+
    
     content.innerHTML = `
       <div class="card">
@@ -49,7 +64,7 @@ function renderApiResponse(apiResponse) {
      <ul class="list-group list-group-flush">
         <li class="list-group-item">Weight: ${data.weight}</li>
          <li class="list-group-item">Height: ${data.height}</li> 
-         <li class="list-group-item"">Types: ${data.types}</li> 
+         <li class="list-group-item"">Types: ${typesString}</li> 
      </ul>
     </div>
 </div>`

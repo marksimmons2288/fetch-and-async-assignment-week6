@@ -125,5 +125,8 @@ input {
 
 #content {
     font-size: 1rem;
-    margin-bottom: 5%;
+    margin-bottom: 1%;
+    border-style: solid;
+    background-color: aliceblue;
+    padding: 2rem;
 }
