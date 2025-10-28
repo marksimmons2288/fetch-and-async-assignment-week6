@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content= "width=device-width,initial-scale=1.0">
+    <title>Fetch and Async Pokemon</title>
+<!-- Bootstrap -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+  </head>
+    <!-- CSS Styles -->
+     <link rel="stylesheet" href="./styles.css">
+     <!--Install Axios  -->
+     <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+</head>
+
+<body>
+
+    <!-- Header Section -->
+  <header class="header_section">
+     <h1>Pokemon</h1>
+           
+     <!--Form  -->
+     <form class="main_form_container" id="mainForm">
+       
+        <!-- Logo -->
+            <div class="logo_container">
+     <img src="https://wallpapercave.com/wp/z90YOyS.jpg" alt="Pokemon Logo" class="logo">
+ </header>
+   
+ <!-- Render Pokemon Data -->
+ <div id="content"> Search results will display here!</div>
+
+ <!-- Main Content -->
+ <div class="main_content">
+     <h2>Pokemon Api Finder</h2>
+    <label for="pokemonFinder" class="label">Pokemon by Name or ID:</label>
+        <input type="text" class="input_field" id="pokemonFinder" name="pokemonFinder" placeholder= "Name: Pikachu or ID: 25" required>
+       
+        <!-- Button -->
+    <div class="btn_container">
+        <button type="submit" class="btn">Search</button>
+    </div>
+ </div>
+
+</form>
+<!-- Bootstrap Script -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+  <!-- JS File -->
+     <script src="main.js" type="module"></script>
+</body>
+</html>
