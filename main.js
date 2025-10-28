@@ -86,7 +86,10 @@ mainForm.addEventListener('submit', async (e) =>{
 
 // If the characters in the search bar are greater than 0
     if (searchValue.length > 0) {
-        content.innerHTML = 'Loading...';
+        content.innerHTML = `
+        <div class="spinner-grow" role="status">
+  <span class="visually-hidden">Loading...</span>
+</div>`;
     
     //    Ensures value is a string even if its a number
        const pokemonResponse = await getPokemonApi(String(searchValue));
@@ -97,6 +100,6 @@ mainForm.addEventListener('submit', async (e) =>{
     }
 });
 
-// Spinners/ Loaders( make the loader before the api call, then remove the loader with the API response)
+
 
 
